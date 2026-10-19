@@ -1,0 +1,648 @@
+{
+  "meta": {
+    "code": "DEMO101",
+    "name": "Introduction to Management Accounting (example)",
+    "assessment": "Midterm",
+    "dateLabel": "Example kit: no real date",
+    "dateISO": "2026-11-02T10:00:00-05:00",
+    "studioTitle": "DEMO101 Midterm Studio",
+    "tagline": "A one-lesson example of the format: break-even for a lemonade stand. Every number is fictional.",
+    "lessonOrder": [
+      "break-even"
+    ]
+  },
+  "start": {
+    "facts": [
+      {
+        "k": "Format",
+        "v": "90 minutes, closed book, non-programmable calculator",
+        "src": "Example: copy the real facts from your test announcement"
+      },
+      {
+        "k": "Coverage",
+        "v": "Cost behaviour and cost-volume-profit analysis",
+        "src": "Example syllabus"
+      }
+    ],
+    "scope": {
+      "in": [
+        "Contribution margin and the CM ratio",
+        "Break-even in units and in sales dollars"
+      ],
+      "out": [
+        "Sales mix (taught after the midterm)"
+      ],
+      "src": "Example announcement"
+    },
+    "timePlan": [
+      {
+        "t": "0 to 5 min",
+        "do": "Read every question and note the marks. Start with your strongest."
+      },
+      {
+        "t": "5 to 80 min",
+        "do": "Work through the questions, about a minute per mark."
+      },
+      {
+        "t": "80 to 90 min",
+        "do": "Check units, rounding and that every part has an answer."
+      }
+    ],
+    "template": {
+      "title": "How to write a full-marks answer",
+      "steps": [
+        {
+          "name": "Label",
+          "what": "Name what you are computing and its unit: 'Break-even (cups per month)'."
+        },
+        {
+          "name": "Formula",
+          "what": "Write the formula in words first: 'fixed costs ÷ CM per cup'."
+        },
+        {
+          "name": "Substitute",
+          "what": "Put the numbers in, with the working for any input you built."
+        },
+        {
+          "name": "Answer",
+          "what": "Box it with its unit, rounded the way the question needs."
+        },
+        {
+          "name": "So what",
+          "what": "One sentence on what it means for the business."
+        }
+      ],
+      "weak": "460 / 1.8 = 255.56",
+      "strong": "CM per cup = $2.50 − $0.70 = $1.80. Break-even = fixed costs ÷ CM per cup = $460 ÷ $1.80 = 255.56, so 256 cups a month (round up: 255 cups still lose $1). Sunny Cup must sell 256 cups before it makes any profit."
+    },
+    "likely": [
+      {
+        "q": "Break-even in units and in sales dollars from a price, a variable cost and fixed costs",
+        "lesson": "break-even"
+      }
+    ],
+    "mistakes": [
+      "Dividing fixed costs by the price instead of the CM per unit.",
+      "Rounding break-even units down."
+    ],
+    "plan": [
+      {
+        "day": "Two days before",
+        "do": [
+          "Play the lesson with its workbook page open",
+          "Do the Your turn page without the video"
+        ]
+      },
+      {
+        "day": "Night before",
+        "do": [
+          "Memory sheet and the pocket card"
+        ]
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "id": "break-even",
+      "group": "CVP analysis",
+      "title": "Break-even in units and dollars",
+      "blurb": "What one cup leaves over, how many cups cover the fixed costs, and why you round up.",
+      "source": "Fictional example written for this repository.",
+      "fictional": true,
+      "table": {
+        "title": "Sunny Cup lemonade, one month (fictional)",
+        "headers": [
+          "Item",
+          "Amount"
+        ],
+        "rows": [
+          [
+            "Price per cup",
+            "$2.50"
+          ],
+          [
+            "Variable cost per cup",
+            "$0.70"
+          ],
+          [
+            "Fixed costs per month",
+            "$460"
+          ]
+        ],
+        "derived": []
+      },
+      "lines": [
+        {
+          "id": "f-cm",
+          "kind": "formula",
+          "always": true,
+          "parts": [
+            {
+              "f": "tcm",
+              "text": "CM per unit"
+            },
+            " = price − variable cost"
+          ]
+        },
+        {
+          "id": "f-be",
+          "kind": "formula",
+          "always": true,
+          "parts": [
+            {
+              "f": "tbe",
+              "text": "Break-even units"
+            },
+            " = fixed costs ÷ CM per unit"
+          ]
+        },
+        {
+          "id": "h1",
+          "kind": "head",
+          "parts": [
+            "A. What one cup leaves over"
+          ]
+        },
+        {
+          "id": "l-cm",
+          "kind": "eq",
+          "label": "CM per cup",
+          "parts": [
+            {
+              "s": "p",
+              "ph": "price"
+            },
+            " − ",
+            {
+              "s": "v",
+              "ph": "VC"
+            },
+            " = ",
+            {
+              "s": "cm",
+              "ph": "CM"
+            }
+          ]
+        },
+        {
+          "id": "l-ratio",
+          "kind": "eq",
+          "label": "CM ratio",
+          "parts": [
+            {
+              "s": "cm2",
+              "ph": "CM"
+            },
+            " ÷ ",
+            {
+              "s": "p2",
+              "ph": "price"
+            },
+            " = ",
+            {
+              "s": "ratio",
+              "ph": "ratio"
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "kind": "head",
+          "parts": [
+            "B. Break-even"
+          ]
+        },
+        {
+          "id": "l-beu",
+          "kind": "eq",
+          "label": "Break-even units",
+          "parts": [
+            {
+              "s": "f",
+              "ph": "fixed"
+            },
+            " ÷ ",
+            {
+              "s": "cm3",
+              "ph": "CM"
+            },
+            " = ",
+            {
+              "s": "beu",
+              "ph": "cups"
+            }
+          ]
+        },
+        {
+          "id": "l-round",
+          "kind": "total",
+          "label": "Round up",
+          "parts": [
+            "→ ",
+            {
+              "s": "beu2",
+              "ph": "cups"
+            },
+            " a month"
+          ]
+        },
+        {
+          "id": "l-bes",
+          "kind": "eq",
+          "label": "Break-even sales",
+          "parts": [
+            {
+              "s": "f2",
+              "ph": "fixed"
+            },
+            " ÷ ",
+            {
+              "s": "r2",
+              "ph": "ratio"
+            },
+            " = ",
+            {
+              "s": "bes",
+              "ph": "sales"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "say": "Sunny Cup sells lemonade for **$2.50** a cup. Each cup costs **$0.70** in lemons, sugar and the cup, and the stand costs **$460** a month to run. These numbers are made up.",
+          "hl": [
+            "0.1",
+            "1.1",
+            "2.1"
+          ]
+        },
+        {
+          "say": "First: how much does one cup leave over after paying for its own ingredients?",
+          "show": [
+            "h1",
+            "l-cm"
+          ],
+          "focus": [
+            "tcm"
+          ]
+        },
+        {
+          "say": "Price minus variable cost per cup.",
+          "fly": [
+            {
+              "from": "0.1",
+              "to": "p"
+            },
+            {
+              "from": "1.1",
+              "to": "v"
+            }
+          ]
+        },
+        {
+          "say": "$2.50 − $0.70 = **$1.80**: the **contribution margin** per cup, what each cup adds toward fixed costs and then profit.",
+          "calc": {
+            "cm": "$1.80"
+          }
+        },
+        {
+          "say": "As a share of the price, that $1.80 is the CM ratio.",
+          "show": [
+            "l-ratio"
+          ],
+          "fly": [
+            {
+              "from": "@cm",
+              "to": "cm2"
+            },
+            {
+              "from": "0.1",
+              "to": "p2"
+            }
+          ]
+        },
+        {
+          "say": "$1.80 ÷ $2.50 = **72%**: 72 cents of every sales dollar is left after variable costs.",
+          "calc": {
+            "ratio": "72%"
+          }
+        },
+        {
+          "say": "Now: how many $1.80 contributions does it take to cover $460 of fixed costs?",
+          "show": [
+            "h2",
+            "l-beu"
+          ],
+          "focus": [
+            "tbe"
+          ],
+          "fly": [
+            {
+              "from": "2.1",
+              "to": "f"
+            },
+            {
+              "from": "@cm",
+              "to": "cm3"
+            }
+          ],
+          "reveal": [
+            "fixed"
+          ]
+        },
+        {
+          "say": "$460 ÷ $1.80 = **255.56** cups.",
+          "calc": {
+            "beu": "255.56"
+          }
+        },
+        {
+          "say": "You can't sell part of a cup, and 255 cups leave a $1.00 loss, so round **up**: **256 cups** a month.",
+          "calc": {
+            "beu2": "256"
+          },
+          "reveal": [
+            "be"
+          ]
+        },
+        {
+          "say": "In sales dollars, divide fixed costs by the CM ratio: $460 ÷ 72% = **$638.89**.",
+          "show": [
+            "l-bes"
+          ],
+          "fly": [
+            {
+              "from": "2.1",
+              "to": "f2"
+            },
+            {
+              "from": "@ratio",
+              "to": "r2"
+            }
+          ],
+          "calc": {
+            "bes": "$638.89"
+          }
+        },
+        {
+          "say": "On the graph, sales and total costs cross at break-even: losses to the left, profit to the right.",
+          "reveal": [
+            "sales",
+            "cost"
+          ]
+        }
+      ],
+      "chart": {
+        "title": "Sunny Cup: sales and total costs",
+        "x": {
+          "label": "Cups sold",
+          "min": 0,
+          "max": 400,
+          "ticks": [
+            0,
+            100,
+            200,
+            300,
+            400
+          ],
+          "fmt": "n"
+        },
+        "y": {
+          "label": "Dollars",
+          "min": 0,
+          "max": 1000,
+          "ticks": [
+            0,
+            250,
+            500,
+            750,
+            1000
+          ],
+          "fmt": "$"
+        },
+        "layers": [
+          {
+            "id": "fixed",
+            "kind": "hline",
+            "y": 460,
+            "label": "Fixed costs",
+            "tone": "muted"
+          },
+          {
+            "id": "be",
+            "kind": "vline",
+            "x": 255.56,
+            "label": "Break-even: 256 cups",
+            "tone": "hl"
+          },
+          {
+            "id": "sales",
+            "kind": "line",
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                400,
+                1000
+              ]
+            ],
+            "label": "Sales",
+            "tone": "info"
+          },
+          {
+            "id": "cost",
+            "kind": "line",
+            "points": [
+              [
+                0,
+                460
+              ],
+              [
+                400,
+                740
+              ]
+            ],
+            "label": "Total costs",
+            "tone": "bad"
+          }
+        ]
+      },
+      "trap": "Dividing fixed costs by the price ($460 ÷ $2.50 = 184 cups) ignores what each cup costs, so it understates break-even.",
+      "words": {
+        "prompt": "Say it in words: why round 255.56 cups up to 256 and not down to 255?",
+        "answer": "At 255 cups the stand earns $459 of contribution, $1.00 short of the $460 fixed costs, so it still loses money. Break-even needs every fixed dollar covered, so round up."
+      },
+      "yourTurn": {
+        "intro": "Same formulas, new numbers (fictional): Sunny Cup adds iced tea.",
+        "table": {
+          "headers": [
+            "Item",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "Price per cup",
+              "$3.00"
+            ],
+            [
+              "Variable cost per cup",
+              "$0.90"
+            ],
+            [
+              "Extra fixed costs per month",
+              "$420"
+            ]
+          ]
+        },
+        "asks": [
+          {
+            "q": "CM per cup?",
+            "a": "$3.00 − $0.90 = $2.10"
+          },
+          {
+            "q": "CM ratio?",
+            "a": "$2.10 ÷ $3.00 = 70%"
+          },
+          {
+            "q": "Break-even cups for the extra fixed costs?",
+            "a": "$420 ÷ $2.10 = 200 cups"
+          },
+          {
+            "q": "Break-even sales?",
+            "a": "$420 ÷ 70% = $600"
+          }
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "id": "p1",
+      "title": "A bake sale table",
+      "source": "Fictional",
+      "minutes": 8,
+      "context": "A club sells cookies at **$1.50** each. Ingredients and packaging cost **$0.40** a cookie, and the table fee and flyers cost **$88**.",
+      "parts": [
+        {
+          "q": "What is the contribution margin per cookie?",
+          "marks": 1,
+          "answer": "$1.50 − $0.40 = **$1.10**",
+          "lesson": "break-even"
+        },
+        {
+          "q": "How many cookies must the club sell to break even?",
+          "marks": 2,
+          "answer": "$88 ÷ $1.10 = **80 cookies**",
+          "lesson": "break-even"
+        },
+        {
+          "q": "What is the profit if it sells 120 cookies?",
+          "marks": 2,
+          "answer": "120 × $1.10 − $88 = **$44**",
+          "lesson": "break-even"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q1",
+      "group": "CVP analysis",
+      "q": "Break-even units equal...",
+      "options": [
+        "Fixed costs ÷ price",
+        "Fixed costs ÷ CM per unit",
+        "Variable cost ÷ CM ratio",
+        "Sales ÷ fixed costs"
+      ],
+      "answer": 1,
+      "why": "Each unit contributes its CM toward fixed costs, so divide fixed costs by the CM per unit.",
+      "lesson": "break-even"
+    },
+    {
+      "id": "q2",
+      "group": "CVP analysis",
+      "q": "The price rises and costs stay the same. Break-even units...",
+      "options": [
+        "Rise",
+        "Fall",
+        "Stay the same",
+        "Can't tell"
+      ],
+      "answer": 1,
+      "why": "A higher price raises the CM per unit, so fewer units cover the same fixed costs.",
+      "lesson": "break-even"
+    }
+  ],
+  "memory": {
+    "formulas": [
+      {
+        "group": "CVP analysis",
+        "name": "Contribution margin per unit",
+        "f": "price − variable cost per unit"
+      },
+      {
+        "group": "CVP analysis",
+        "name": "CM ratio",
+        "f": "CM per unit ÷ price"
+      },
+      {
+        "group": "CVP analysis",
+        "name": "Break-even units",
+        "f": "fixed costs ÷ CM per unit",
+        "note": "Round up"
+      },
+      {
+        "group": "CVP analysis",
+        "name": "Break-even sales",
+        "f": "fixed costs ÷ CM ratio"
+      }
+    ],
+    "cards": [
+      {
+        "group": "CVP analysis",
+        "q": "What does the contribution margin pay for?",
+        "a": "First the fixed costs, then profit."
+      },
+      {
+        "group": "CVP analysis",
+        "q": "Why round break-even units up?",
+        "a": "Rounding down leaves part of the fixed costs uncovered, so there is still a loss."
+      }
+    ],
+    "tables": [
+      {
+        "title": "What moves break-even (one change, all else equal)",
+        "headers": [
+          "Change",
+          "CM per unit",
+          "Break-even units"
+        ],
+        "rows": [
+          [
+            "Price up",
+            "Up",
+            "Down"
+          ],
+          [
+            "Variable cost up",
+            "Down",
+            "Up"
+          ],
+          [
+            "Fixed costs up",
+            "No change",
+            "Up"
+          ]
+        ]
+      }
+    ],
+    "traps": [
+      "Break-even divides fixed costs by the CM per unit, not by the price."
+    ]
+  },
+  "downloads": []
+}
